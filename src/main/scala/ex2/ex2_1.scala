@@ -7,6 +7,7 @@ object ex2_1 {
     //val - stała/wartość
     //var - zmienna
 
+    println()
     println("NBD 2.1")
     val dniTygodnia = List("poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota", "niedziela")
 
@@ -23,11 +24,27 @@ object ex2_1 {
 
     println(roboczyCzyWolny(dniTygodnia(1)))
     println(roboczyCzyWolny(dniTygodnia(6)))
-    println(roboczyCzyWolny(dniTygodnia(0)))
+    println(roboczyCzyWolny(dniTygodnia.head))
 
+    println()
     println("NBD 2.2")
+    val k1 = new KontoBankowe
+    val k2 = new KontoBankowe(2.7)
+    println(k1.stanKonta)
+    println(k2.stanKonta)
+    k1.wplata(10)
+    k2.wyplata(1)
+    println(k1.stanKonta)
+    println(k2.stanKonta)
+//    k2.stanKonta = 10 //wywoła błąd
+
+    println()
+    println("NBD 2.3")
 
 
-    println("NBD 2.1")
+
+
+    println()
+    println("NBD 2.3")
   }
 }
