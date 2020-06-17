@@ -105,7 +105,5 @@ object ex2_1 {
     println()
     println(o25.toString)
     println(o26.toString)
-
-
   }
 }
