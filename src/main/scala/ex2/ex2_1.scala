@@ -80,7 +80,6 @@ object ex2_1 {
       override def toString: String = super.toString + s"; pensja = $pensja"
     }
 
-
     val o21 = new Osoba2("Mateusz", "Osoba", 20)
     //    o21.imie = "Karol" //read-only - zwróci błąd
     val o22 = new Osoba2("Jerzy", "Student", 100) with Student
